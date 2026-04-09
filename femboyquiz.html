@@ -185,13 +185,18 @@ function showResult() {
 
     let resultText = "";
 
-    if (score > 45) {
-        resultText = "🌸 Certified Femboy Energy 🌸";
-    } else if (score > 25) {
-        resultText = "✨ Some Femboy Vibes ✨";
-    } else {
-        resultText = "🗿 Not Really a Femboy 🗿";
-    }
+if (score > 50) {
+    resultText = "💅 At this point it’s not a phase, it’s a lifestyle.";
+} else if (score > 40) {
+    resultText = "So you def have the vibes, but not the clothes :3";
+} else if (score > 30) {
+    resultText = "Boy, we all know you're secretly a femboy but not certified :P";
+} else if (score > 20) {
+    resultText = "😌 You got the spirit but you're still in denial";
+} else if (score > 10) [
+    resultText = "🗿 Not really a femboy but you tried";
+} else if (score < 10)
+    resultText = "Manliest man of all man kind";
 
     document.getElementById("question").innerText = "Quiz Complete!";
     document.getElementById("result").innerText =
